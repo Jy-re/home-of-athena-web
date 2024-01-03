@@ -26,7 +26,6 @@ body {
 
 .navbar{
     width: 100%;
-
 }
 
 a{
@@ -156,6 +155,13 @@ a{
 
 /* Ongoing event page styles */
 
+.events{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .slides-container{
     display: flex;
@@ -181,17 +187,35 @@ a{
     max-height: 500px;
 }
 
+.btns-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+
 .slide-prev, .slide-next{
-    width: 50px;
+    width: 5px;
     height: auto;
     background-color: transparent;
     border: none;
     position: relative;
+    margin-top: 30px;
+}
+
+.slide-prev{
+    margin-right: 50px;
 }
 
 .slide-nav{
-    width: 50px;
+    width: 30px;
     height: auto;
+    border-radius: 50px;
+}
+
+.slide-nav:hover{
+    background-color: #74b170;
 }
 
 /* Reviews Styles */
@@ -261,9 +285,6 @@ a{
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {...} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
 
 /* Extra small devices (phones, 600px and down) */
 /* @media only screen and (max-width: 600px) {} */
