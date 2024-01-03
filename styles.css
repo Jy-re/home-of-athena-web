@@ -124,11 +124,6 @@ a{
     align-items: center;
 }
 
-.home-event:hover{
-    padding-top: 20px;
-    background-color: rgb(207, 238, 206);
-}
-
 .home-event img {
     max-width: 90%;
     max-height: 90%;
