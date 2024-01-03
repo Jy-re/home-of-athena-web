@@ -97,9 +97,10 @@ a{
 
 .section-header{
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
     flex-wrap: wrap;
     margin: 0;
+    text-align: center;
 }
 
 .home-items{
@@ -148,8 +149,52 @@ a{
     align-self: flex-start;
 }
 
+/* Ongoing event page styles */
 
 
+.slides-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    gap: 20px;
+    height: 500px;
+}
+
+.slideshow-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.slideshow-container img{
+    max-height: 500px;
+}
+
+.slide-prev, .slide-next{
+    width: 50px;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.slide-nav{
+    width: 50px;
+    height: auto;
+}
+
+/* Reviews Styles */
+.hidden {
+    display: none;
+}
+
+/* Back to top button styles */
 .back-to-top{
     position: fixed;
     right: 0;

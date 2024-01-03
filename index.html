@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home of Athena Bookclub</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
+    
     <main class="head">
         <div class="firstPage" id="overview">
 
-            <!-- Navigation Bar -->
+            <!-- -------- Navigation Bar ------- -->
             <nav class="navbar">
                 <ul class="items">
                     <a class="item" href="#overview">Overview</a>
@@ -20,7 +22,7 @@
                 </ul>
             </nav>
 
-            <!-- Overview Page -->
+            <!-- ----- Overview ----- -->
             <div class="aboutText">
                 <p class="o-heading">HOME OF ATHENA</p>
                 <p class="o-desc">Welcome to the Home of Athena, a reading community designed as a cozy and comfortable space to discuss literature. We welcome all reading levels, ages, and backgrounds.</p> 
@@ -32,50 +34,100 @@
         </div>
     </main>
 
-    <!-- The Home Page -->
+    <!-- ------ Server Features -------- -->
     <section class="homepage" id="home">
         <h1 class="section-header">HOME</h1>
         <div class="home-items">
-            <div class="home-event">
+            <article class="home-event">
                 <img src="/assets/buddy-read.png" alt="buddy-read">
                 <label>Buddy Read Program</label>
                 <p>The Book Buddies program allows you to form reading groups, set reading goals and complete star tasks together.</p>
-            </div>
-            <div class="home-event">
+            </article>
+            <article class="home-event">
                 <img src="/assets/dead-poet-society.png" alt="buddy-read">
                 <label>Dead Poets Society</label>
                 <p>The dead poet's society is a place where you can find a group or pair to buddy read the same book together</p>
-            </div>
-            <div class="home-event">
+            </article>
+            <article class="home-event">
                 <img src="/assets/sessions.png" alt="buddy-read">
                 <label>Reading/Study Sessions</label>
                 <p>Reading/study sessions encourage our members to read and study together. Our librarians regularly host sessions.</p>
-            </div>
-            <div class="home-event">
+            </article>
+            <article class="home-event">
                 <img src="/assets/star-system.png" alt="buddy-read">
                 <label>The Star System</label>
                 <p>Earn stars for participating in reading sessions and events. You will also be rewarded stars for submitting reading time</p>
-            </div>
-            <div class="home-event">
+            </article>
+            <article class="home-event">
                 <img src="/assets/read-a-thon.png" alt="buddy-read">
                 <label>Read-a-thons</label>
                 <p>Readathons are hosted once a month. Our readathons are usually 24 or 28 hours, and have their own themes, and challenges you can complete for stars.</p>
-            </div>
-            <div class="home-event">
+            </article>
+            <article class="home-event">
                 <img src="/assets/writing-prompts.png" alt="buddy-read">
                 <label>Weekly Writing Prompts</label>
                 <p>Weekly writing prompts will be given to writers weekly and the winning entry will receive stars</p>
-            </div>
+            </article>
         </div>
     </section>
 
+    <!-- ------ Recent Events -------- -->
     <section class="events" id="on-events">
-        <h1>Ongoing Events</h1>
+        <h1 class="section-header">RECENT EVENTS</h1>
+        <div class="slides-container">
+            <button class="slide-prev">
+                <img class="slide-nav" src="/assets/left.png">
+            </button>
+            <article class="slideshow-container">
+               <img class="slideshow-img1" src="assets/i-am-home-events.png" alt="slide1">
+               <p class="slideshow-label">1000 MEMBER EVENT</p> 
+            </article>
+            <article class="slideshow-container">
+               <img class="slideshow-img2" src="assets/i-am-home-tasks.png" alt="slide2">
+               <p class="slideshow-label">1000 MEMBER EVENT TASKS</p> 
+            </article>
+            <article class="slideshow-container">
+                <img class="slideshow-img3" src="assets/winter-wonderland.png" alt="slide2">
+                <p class="slideshow-label">DECEMBER READATHON</p> 
+            </article>
+            <button class="slide-next">
+                <img class="slide-nav" src="assets/right.png">
+            </button>
+        </div>
     </section>
+
+    <!-- ----- Reviews ------ -->
+    <section class="reviews" id="reviews">
+        <h1>REVIEWS</h1>
+        <div class="review-container">
+            <div class="review1">
+                <p>Review 1</p>
+            </div>
+            <div class="review2">
+                <p>Review 2</p>
+            </div>
+            <div class="review3">
+                <p>Review 3</p>
+            </div>
+            <div class="review4 hidden">
+                <p>Review 4</p>
+            </div>
+            <div class="review5 hidden">
+                <p>Review 5</p>
+            </div>
+            <div class="review6 hidden">
+                <p>Review 6</p>
+            </div>
+            <button id="showMoreBtn">Show More Reviews</button>
+        </div>
+    </section>
+
 
     <!-- Back-to-top button -->
     <a href="#top" class="back-to-top">
         <img src="/assets/up-arrow.png" class="top-icon">
     </a>
+
+    <script src="index.js"></script>
 </body>
 </html>
