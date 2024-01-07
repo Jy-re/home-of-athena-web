@@ -16,7 +16,7 @@ body {
     padding: 0;
     background-color: #F5FFF9;
 }
-.imageStyle {
+.image-style {
     justify-content: right;
     object-fit: cover;
     height: 755px;
@@ -26,14 +26,16 @@ body {
 
 .navbar{
     width: 100%;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
-a{
+.item{
     text-decoration: none;
     color: black;
 }
 
-.firstPage{
+.first-page{
     width: 100%;
 }
 
@@ -46,7 +48,7 @@ a{
     font-size: 30px;
 }
 
-.aboutText{
+.about-text{
     width: 70%;
     height: auto;
     display: flex;
@@ -57,18 +59,14 @@ a{
     margin-bottom: 20px; 
 }
 
-.o-heading-container{
-    word-wrap: break-word;
-}
-
-.o-heading{
+.overview-heading{
     font-weight: bold;
     font-size: 60px;
     flex-wrap: wrap;
     margin: 0;
 }
 
-.o-desc{
+.overview-description{
     font-size: xx-large;
 }
 
@@ -78,7 +76,7 @@ a{
     justify-content: space-between;
 }
 
-.discbutton{
+.discord-btn{
     text-decoration: none;
     background-color: #9ACC96;
     padding: 15px 40px 15px;
@@ -90,7 +88,7 @@ a{
     font-size: 30px;
 }
 
-.discbutton:hover{
+.discord-btn:hover{
     background-color: #74b170;
 }
 
@@ -136,9 +134,9 @@ a{
 .home-event img {
     max-width: 90%;
     max-height: 90%;
-    display: block; /* Ensure the image behaves properly within the container */
-    width: auto; /* Reset width to auto to scale with height */
-    height: auto; /* Reset height to auto to scale with width */
+    display: block; 
+    width: auto; 
+    height: auto; 
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -276,6 +274,7 @@ a{
     height: 50px;
 }
 
+/* BREAKPOINTS */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {} */

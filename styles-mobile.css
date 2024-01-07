@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
 
-    .firstPage{
+    .first-page{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -21,11 +21,11 @@
         margin-right: 20px;
     }
 
-    .imgContainer{
+    .img-container{
         display: none;
     }
 
-    .aboutText{
+    .about-text{
         margin-top: 20px;
         display: flex;
         justify-content: center;
@@ -35,18 +35,18 @@
         width: 70%;
     }
 
-    .o-heading{
+    .overview-heading{
         font-size: 25px;
         
     }
 
-    .o-desc{
+    .overview-description{
         font-size: medium;
         text-align: center;
         width: 90%;
     }
 
-    .discbutton{
+    .discord-btn{
         font-size: 15px;
         margin: 20px;
         width: 120px;
