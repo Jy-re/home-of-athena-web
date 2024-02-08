@@ -1,4 +1,289 @@
+
+::-webkit-scrollbar {
+    display: none;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(232, 255, 254);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #F5FFF9;
 }
+.image-style {
+    justify-content: right;
+    object-fit: cover;
+    height: 755px;
+    width: 580px;
+    float: right;
+}
+
+.navbar{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.item{
+    text-decoration: none;
+    color: black;
+}
+
+.first-page{
+    width: 100%;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.about-text{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px ;
+    margin-left: 90px;   
+    margin-bottom: 20px; 
+}
+
+.overview-heading{
+    font-weight: bold;
+    font-size: 60px;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.overview-description{
+    font-size: xx-large;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.discord-btn{
+    text-decoration: none;
+    background-color: #9ACC96;
+    padding: 15px 40px 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 90px;
+    cursor: pointer;
+    color: black;
+    font-size: 30px;
+}
+
+.discord-btn:hover{
+    background-color: #74b170;
+}
+
+/* Home Styles */
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.section-header{
+    font-weight: bold;
+    font-size: 40px;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: center;
+}
+
+.home-items, .review-container{
+    width: 80%;
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.home-event, .review{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-event img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block; 
+    width: auto; 
+    height: auto; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home-event p{
+    margin: 20px;
+}
+
+.home-event label{
+    font-weight: bold;
+    margin-left: 20px;
+    align-self: flex-start;
+}
+
+/* Ongoing event page styles */
+
+.events{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.slides-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    gap: 20px;
+    height: 500px;
+}
+
+.slideshow-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.slideshow-container img{
+    max-height: 500px;
+}
+
+.btns-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+
+.slide-prev, .slide-next{
+    width: 5px;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    margin-top: 30px;
+}
+
+.slide-prev{
+    margin-right: 50px;
+}
+
+.slide-nav{
+    width: 30px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.slide-nav:hover{
+    background-color: #74b170;
+}
+
+/* Reviews Styles */
+
+.hidden {
+    display: none;
+}
+
+.reviews{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.review img{
+    height: 40px;
+    margin-top: 50px;
+}
+
+.review-title{
+    word-wrap: break-word;
+    margin: 20px;
+    text-align: center;
+}
+
+.review-content{
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow-y: scroll;
+}
+
+.show-more-btn{
+    text-decoration: none;
+    background-color: #9ACC96;
+    padding: 10px 30px 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    border: none;
+}
+
+/* Back to top button styles */
+.back-to-top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.top-icon{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+/* BREAKPOINTS */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {} */
